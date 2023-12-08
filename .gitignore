@@ -1,0 +1,7 @@
+.DS_Store
+!original_models/.gitkeep
+models/
+output/
+*.egg-info
+*.pyc
+/dist
