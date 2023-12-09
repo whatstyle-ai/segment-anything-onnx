@@ -1,5 +1,6 @@
 import cv2
 import urllib.request
+import numpy as np
 
 from segment_anything_onnx.inference import predict_masks
 
@@ -16,7 +17,7 @@ def load_image(uri):
 
 encoder_model_path = './models/sam_vit_l_0b3195.encoder.onnx'
 decoder_model_path = './models/sam_vit_l_0b3195.decoder.onnx'
-image = load_image( './examples/laura.jpg' )
+image = load_image( 'https://raw.githubusercontent.com/whatstyle-ai/segment-anything-onnx/main/examples/laura.jpg' )
 prompt = [
     { 'type': 'point', 'data': [1750, 300], 'label': 0 },
     { 'type': 'rectangle', 'data': [611, 655, 2712, 4500] }
