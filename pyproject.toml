@@ -24,7 +24,7 @@ packages = [ "segment_anything_onnx" ]
 
 [project]
 name = "segment_anything_onnx"
-version = "0.0.3"
+version = "0.0.4"
 authors = [
     { name="Mike Prince", email="mike@mikeprince.com" },
 ]
