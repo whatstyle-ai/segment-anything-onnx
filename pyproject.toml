@@ -24,9 +24,9 @@ packages = [ "segment_anything_onnx" ]
 
 [project]
 name = "segment_anything_onnx"
-version = "0.0.2"
+version = "0.0.3"
 authors = [
-  { name="Mike Prince", email="mike@mikeprince.com" },
+    { name="Mike Prince", email="mike@mikeprince.com" },
 ]
 description = "Run Segment Anything with ONNX models"
 readme = "README.md"
@@ -35,6 +35,11 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
+]
+dependencies = [
+    "opencv-python",
+    "numpy",
+    "onnxruntime"
 ]
 
 [project.urls]
